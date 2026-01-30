@@ -1,0 +1,18 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item 
+        android:width="24dp" 
+        android:height="24dp" 
+        android:gravity="center">
+        <shape android:shape="rectangle">
+            <corners android:radius="6dp" />
+            <solid android:color="#1976D2" />
+        </shape>
+    </item>
+
+    <item 
+        android:width="14dp" 
+        android:height="14dp" 
+        android:gravity="center"
+        android:drawable="@drawable/ic_check_white" />
+</layer-list>
+

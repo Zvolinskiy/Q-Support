@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="#FFFFFF">
+
+	<LinearLayout
+		android:id="@+id/topBar"
+		android:layout_width="match_parent"
+		android:layout_height="60dp"
+		android:background="#FFFFFF"
+		android:elevation="4dp"
+		android:gravity="center_vertical"
+		android:paddingLeft="16dp"
+		android:paddingRight="16dp">
+
+		<TextView
+			android:id="@+id/headerTitle"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:text="Q-Support"
+			android:textColor="#FF1976D2"
+			android:textSize="20sp"
+			android:textStyle="bold"
+			android:layout_marginLeft="10dp"/>
+
+		<androidx.appcompat.widget.AppCompatButton
+			android:id="@+id/langSwitch"
+			android:layout_width="56dp"
+			android:layout_height="30dp"
+			android:layout_marginEnd="12dp"
+			android:background="@drawable/btn_lang_bg"
+			android:text="RU"
+			android:textColor="#1976D2"
+			android:textSize="13sp"
+			android:textAllCaps="true"
+			android:includeFontPadding="false"
+			android:padding="0dp"/>
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_below="@id/topBar"
+		android:layout_above="@+id/bottomNav"
+		android:orientation="vertical"
+		android:padding="16dp">
+
+		<EditText
+			android:id="@+id/searchView"
+			android:layout_width="match_parent"
+			android:layout_height="50dp"
+			android:background="@drawable/edit_text_bg"
+			android:hint="Поиск..."
+			android:paddingLeft="16dp"
+			android:paddingRight="16dp"
+			android:layout_marginBottom="6dp"
+			android:drawableStart="@drawable/ic_search" 
+			android:drawableTint="#757575" 
+			android:drawablePadding="12dp"
+			android:textSize="15sp"
+			android:singleLine="true"
+			android:imeOptions="actionSearch"/>
+
+		<ScrollView
+			android:id="@+id/dynamicScollView"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:fillViewport="true">
+
+			<LinearLayout
+				android:id="@+id/dynamicContainer"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:animateLayoutChanges="true"
+				android:orientation="vertical"/>
+
+		</ScrollView>
+
+	</LinearLayout>
+	
+	<LinearLayout
+		android:id="@+id/volunteersLayout"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_below="@id/topBar"
+		android:layout_above="@+id/bottomNav"
+		android:orientation="vertical"
+		android:padding="16dp"
+		android:visibility="gone">
+
+		<ScrollView
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:fillViewport="true">
+
+			<LinearLayout
+				android:id="@+id/dynamicContainerVolunteer"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:animateLayoutChanges="true"
+				android:orientation="vertical"/>
+
+		</ScrollView>
+		
+	</LinearLayout>
+
+	<com.google.android.material.bottomnavigation.BottomNavigationView
+		android:id="@+id/bottomNav"
+		android:layout_width="match_parent"
+		android:layout_height="60dp"
+		android:layout_alignParentBottom="true"
+		android:background="#FFFFFF"
+		app:itemIconTint="@color/bottom_nav_colors"
+		app:itemTextColor="@color/bottom_nav_colors"
+		app:menu="@menu/bottom_menu"
+		app:labelVisibilityMode="labeled" 
+		app:itemHorizontalTranslationEnabled="false" />
+
+</RelativeLayout>
+
