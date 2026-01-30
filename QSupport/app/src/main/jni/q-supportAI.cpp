@@ -42,7 +42,6 @@ Java_com_example_qsupport_MainActivity_initFilters(JNIEnv *env, jobject thiz, jo
     }
 }
 
-// Простая функция поиска подстрок
 bool match(const std::string& msg, const std::vector<std::string>& keys) {
     if (keys.empty()) return false;
     for (const auto& k : keys) {
@@ -60,12 +59,10 @@ Java_com_example_qsupport_MainActivity_analyzeMessage(JNIEnv *env, jobject thiz,
 
     const char *nativeMsg = env->GetStringUTFChars(user_msg, 0);
     std::string msg(nativeMsg);
-    // Приводим к нижнему регистру для удобства поиска
     std::transform(msg.begin(), msg.end(), msg.begin(), ::tolower);
     
     std::string res;
 
-    // --- ENGLISH ---
     if (currentLang == "en") {
         if (match(msg, forbidden_db)) {
             res = "Community Guidelines violation! Response denied.";
