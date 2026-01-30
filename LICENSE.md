@@ -3,7 +3,7 @@
 ================================================================================
 PROJECT ID: Q-SUPPORT-2026
 LEGAL OWNER: Zvolinskiy (Individual Developer)
-CONTACT: Telegram @zvolinskiy
+CONTACT: Telegram @zvolinskiyy
 STATUS: STRICTLY PROPRIETARY / NOT FOR REDISTRIBUTION
 ================================================================================
 
@@ -12,7 +12,7 @@ ENGLISH
 --------------------------------------------------------------------------------
 1. OWNERSHIP AND INTELLECTUAL PROPERTY
 The "Q-Support" software, including its source code, algorithms, and design, 
-is the sole intellectual property of Zvolinskiyy (the "Author"). This software 
+is the sole intellectual property of Zvolinskiy (the "Author"). This software 
 is protected by international copyright laws.
 
 2. LICENSE GRANT & RESTRICTIONS
@@ -31,7 +31,7 @@ SHALL THE AUTHOR BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY.
 --------------------------------------------------------------------------------
 1. СОБСТВЕННОСТЬ И ИНТЕЛЛЕКТУАЛЬНЫЕ ПРАВА
 Данное ПО "Q-Support" является исключительной интеллектуальной собственностью 
-автора Zvolinskiyy. Все права защищены международным законодательством.
+автора Zvolinskiy. Все права защищены международным законодательством.
 
 2. ОГРАНИЧЕНИЯ ИСПОЛЬЗОВАНИЯ
 2.1. ТЕСТИРОВАНИЕ: Код предоставляется исключительно для ознакомления и оценки 
